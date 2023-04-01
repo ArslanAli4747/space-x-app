@@ -1,0 +1,47 @@
+.home{
+    background: url("../../../public/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button{
+    height: 60px;
+    width: 160px;
+    z-index: 100;
+    background-color: rgba(2, 23, 36, 0.295);
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px rgba(255, 255, 255, 0.158),
+    -2px -2px 5px 2px rgba(255, 255, 255, 0.158);
+}
+.button span{
+    background-color: rgba(235, 234, 236, 0.199);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 60px;
+    transition: all 0.2s;
+}
+.button:hover span{
+    width: 160px;
+
+}
+.button:active{
+    box-shadow: none;
+}
+.rocket{
+    animation: moverocket 5s infinite;
+}
+
+@keyframes moverocket {
+    0%,100%{
+        transform: translateY(0px);
+        scale: 1;
+    }
+    50%{
+        transform: translateY(-60px);
+        scale: 1.1;
+    }
+    
+}
